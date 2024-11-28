@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form method="post" action="https://script.google.com/macros/s/AKfycbxM1MijbjEWlcZnkT9lD_Yehb6FuX5R0-uuIbfBab7ATMuwWMpxJsZd-KPbwzHfMIX2yQ/exec" name="Pendaftaran">
+            <h4>Pendaftaran Webinar</h4>
+            <p>Penyelenggara TI 24 A6</p>
+            <p>Universitas Pelita Bangsa</p>
+            <br>
+            <input type="text" name="Nama" placeholder="Nama Lengkap" required>
+            <input type="text" name="No.HP" placeholder="Masukkan No WhatsApp" required>
+            <input type="email" name="Email" placeholder="Masukkan Email" required>
+
+            <label for="status">Pilih Status</label>
+            <select id="status" name="Status" required>
+                <option value="Instansi">Instansi/Organisasi</option>
+                <option value="Mahasiswa">Mahasiswa</option>
+                <option value="Umum">Umum</option>
+            </select>
+
+            <div id="mahasiswa-input" style="display: none;">
+                <select id="Universitas" name="Universitas">
+                    <option value="Universitas Pelita Bangsa">Universitas Pelita Bangsa</option>
+                    <option value="lainnya">Lainnya</option>
+                </select>
+                <label for="Prodi">Program Studi</label>
+                <input type="text" id="Prodi" name="Prodi" placeholder="Masukkan Program Studi Anda">
+                <label for="Kelas">Kelas :</label>
+                <input type="text" id="Kelas" name="Kelas" placeholder="Masukkan Kelas Anda ">
+            </div>
+
+            <div id="umum-input" style="display: none;">
+                <label for="IO">Instansi/Organisasi</label>
+                <input type="text" id="IO" name="I/O" placeholder="Masukan nama Instansi atau Organisasi">
+            </div>
+
+            <input type="submit" value="Daftar Sekarang" id="submit">
+        </form>
+    </div>
+
+    <script src="Google Sheet.js"></script>
+</body>
+
+</html>
