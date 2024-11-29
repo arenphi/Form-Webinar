@@ -1,3 +1,16 @@
+function hideImageOnMobile() {
+    const image = document.querySelector('.pamflet');
+
+    if (window.innerWidth <= 600) {
+        image.style.display = 'none';
+    } else {
+        image.style.display = 'block';
+    }
+}
+
+window.onload = hideImageOnMobile;
+window.onresize = hideImageOnMobile;
+
 document.getElementById('status').addEventListener('change', function() {
     var status = this.value;
     var mahasiswaInput = document.getElementById('mahasiswa-input');
