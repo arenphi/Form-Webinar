@@ -29,9 +29,9 @@ body {
 }
 
 .pamflet {
-    width: 100%;
+    width: 200%;
     max-width: 300px;
-    margin-right: 20px;
+    margin-right: 5px;
     border-radius: 10px;
 }
 
@@ -40,7 +40,7 @@ form {
 }
 
 .scroll {
-    height: 295px;
+    height: 284px;
     padding-right: 8px;
     overflow: hidden;
     overflow-y: auto;
@@ -67,13 +67,17 @@ h5 {
     border-radius: 0 0 8px 8px;
 }
 
+h6 {
+    padding-bottom: 5px;
+}
+
 p {
     background-color: #175971;
     color: white;
     text-align: center;
     font-size: 15px;
     margin-top: 0;
-    padding: 15px;
+    padding-bottom: 2px;
 }
 
 label {
