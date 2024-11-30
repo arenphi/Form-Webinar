@@ -23,7 +23,7 @@ body {
     align-items: center;
     padding: 10px;
     border: 2px solid #d2d5da;
-    box-shadow: 0 0 5px 0.5px rgb(219, 218, 218);
+    box-shadow: 0 0 10px 0.5px rgb(0, 0, 0);
     border-radius: 10px;
     background-color: white;
 }
@@ -39,24 +39,57 @@ form {
     width: 50%;
 }
 
+.scroll {
+    height: 295px;
+    padding-right: 8px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
 h4 {
-    font-size: 24px;
+    background-color: #175971;
+    color: white;
     text-align: center;
-    color: black;
-    margin-bottom: 4px;
+    font-size: 24px;
+    padding-top: 5px;
+    margin-bottom: 0;
+    border-radius: 8px 8px 0 0;
+}
+
+h5 {
+    background-color: #175971;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    border-radius: 0 0 8px 8px;
 }
 
 p {
+    background-color: #175971;
+    color: white;
     text-align: center;
     font-size: 15px;
-    margin-bottom: 2px;
+    margin-top: 0;
+    padding-bottom: 2px;
+}
+
+label {
+    font-size: 15px;
+}
+
+option {
+    font-size: 15px;
 }
 
 input,
 select {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    font-size: 15px;
     text-decoration: none;
     border: 1.5px solid #d2d5da;
     border-radius: 10px;
@@ -65,12 +98,11 @@ select {
 
 #submit {
     border: none;
-    background-color: orangered;
+    background-color: #175971;
     color: white;
     width: 100%;
     padding: 12px;
-    margin-top: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -81,7 +113,7 @@ select {
 input:focus,
 select:focus,
 #submit:focus {
-    border-color: orangered;
+    border-color: #175971;
     outline: none;
 }
 
