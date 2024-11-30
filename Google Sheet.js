@@ -19,9 +19,11 @@ document.getElementById('status').addEventListener('change', function() {
     if (status === 'Mahasiswa') {
         mahasiswaInput.style.display = 'block';
         umumInput.style.display = 'none';
+
     } else if (status === 'Umum') {
         mahasiswaInput.style.display = 'none';
         umumInput.style.display = 'block';
+
     } else {
         mahasiswaInput.style.display = 'none';
         umumInput.style.display = 'none';
@@ -35,7 +37,9 @@ const form = document.forms['Pendaftaran']
 form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(Response => alert("Anda Telah Berhasil Mendaftar Webinar!"))
-        .then(() => { window.location.reload(); })
+        .then(Response => {
+            alert("Anda Telah Berhasil Mendaftar Webinar!");
+            window.location.href = 'https://arenphi.github.io/WebinarTI.24.A6/';
+        })
         .catch(Error => console.error('Error', error.message))
 })
