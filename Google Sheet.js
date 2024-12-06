@@ -80,7 +80,7 @@ form.addEventListener('submit', e => {
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
             alert("Anda Telah Berhasil Mendaftar Webinar!");
-            window.location.href = 'https://arenphi.github.io/WebinarTI.24.A6/';
+            window.location.href = 'https://arenphi.github.io/Link-WebinarA6/';
         })
         .catch(error => {
             console.error('Error:', error.message);
