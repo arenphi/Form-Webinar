@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <img class="pamflet" src="img/pamflett.png" alt="pamflet-webinar">
+        <img class="pamflet" src="img/pamflet.png" alt="pamflet-webinar">
         <form method="post" action="https://script.google.com/macros/s/AKfycbxM1MijbjEWlcZnkT9lD_Yehb6FuX5R0-uuIbfBab7ATMuwWMpxJsZd-KPbwzHfMIX2yQ/exec" name="Pendaftaran">
 
             <div class="header">
@@ -38,7 +38,7 @@
                 <div id="mahasiswa-input" style="display: none;">
                     <select id="universitas" name="universitas">
                     <option value="PU" selected>Pilih Universitas</option>
-                    <option value="Universitas Pelita Bangsa" id="UPB">Universitas Pelita Bangsa</option>
+                    <option value="Universitas Pelita Bangsa" id="UPB" name="UPB">Universitas Pelita Bangsa</option>
                     <option value="lainnya" id="lain">Lainnya</option>
                 </select>
                 </div>
@@ -51,10 +51,10 @@
                 </div>
 
                 <div id="lainnya-input" style="display: none;">
-                    <label for="univapa">Universitas lainnya :</label>
-                    <input type="text" id="univapa" name="univapa" placeholder="Universitas Anda">
+                    <label for="univlain" name="univlain">Universitas lainnya :</label>
+                    <input type="text" id="univlain" name="univlain" placeholder="Universitas Anda">
                     <label for="Prodi">Program Studi :</label>
-                    <input type="text" id="Prodi" name="Prodi" placeholder="Masukan Program Studi Anda">
+                    <input type="text" id="Prodilain" name="Prodilain" placeholder="Masukan Program Studi Anda">
 
                 </div>
 
