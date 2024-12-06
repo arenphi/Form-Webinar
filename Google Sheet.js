@@ -1,4 +1,3 @@
-// Fungsi untuk menyembunyikan gambar pada perangkat mobile
 function hideImageOnMobile() {
     const image = document.querySelector('.pamflet');
     if (image) {
@@ -13,12 +12,11 @@ function hideImageOnMobile() {
 window.onload = hideImageOnMobile;
 window.onresize = hideImageOnMobile;
 
-// Menangani perubahan status dan menampilkan input yang relevan
 document.getElementById('status').addEventListener('change', function() {
     var status = this.value;
     var mahasiswaInput = document.getElementById('mahasiswa-input');
     var umumInput = document.getElementById('umum-input');
-    var upbInput = document.getElementById('UPB-input'); // Pastikan ID sesuai dengan HTML
+    var upbInput = document.getElementById('UPB-input');
     var statusSelect = document.getElementById('status');
 
     if (status === 'Mahasiswa') {
@@ -87,7 +85,6 @@ form.addEventListener('submit', e => {
         .catch(error => {
             console.error('Error:', error.message);
             alert("Terjadi kesalahan saat mengirim data. Silakan coba lagi.");
-            // Aktifkan kembali tombol submit jika terjadi error
             submitButton.disabled = false;
             submitButton.value = 'Daftar Sekarang';
         });
