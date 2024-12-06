@@ -71,13 +71,24 @@ document.getElementById('universitas').addEventListener('change', function() {
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxM1MijbjEWlcZnkT9lD_Yehb6FuX5R0-uuIbfBab7ATMuwWMpxJsZd-KPbwzHfMIX2yQ/exec';
 const form = document.forms['Pendaftaran'];
+const submitButton = document.getElementById('submit');
 
 form.addEventListener('submit', e => {
     e.preventDefault();
+
+    submitButton.disabled = true;
+    submitButton.value = 'Mengirim...';
+
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
             alert("Anda Telah Berhasil Mendaftar Webinar!");
             window.location.href = 'https://arenphi.github.io/WebinarTI.24.A6/';
         })
-        .catch(error => console.error('Error:', error.message));
+        .catch(error => {
+            console.error('Error:', error.message);
+            alert("Terjadi kesalahan saat mengirim data. Silakan coba lagi.");
+            // Aktifkan kembali tombol submit jika terjadi error
+            submitButton.disabled = false;
+            submitButton.value = 'Daftar Sekarang';
+        });
 });
