@@ -16,6 +16,15 @@ body {
     justify-content: center;
 }
 
+.header {
+    border: none;
+    width: 100%;
+    background-color: #175971;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
 .container {
     width: 650px;
     display: flex;
@@ -40,44 +49,29 @@ form {
 }
 
 .scroll {
-    height: 284px;
+    height: 278px;
     padding-right: 8px;
     overflow: hidden;
     overflow-y: auto;
 }
 
 h4 {
-    background-color: #175971;
     color: white;
     text-align: center;
     font-size: 24px;
-    padding-top: 5px;
-    margin-bottom: 0;
-    border-radius: 8px 8px 0 0;
 }
 
 h5 {
-    background-color: #175971;
     color: white;
     font-weight: normal;
     text-align: center;
     font-size: 15px;
-    margin-bottom: 0;
-    padding-bottom: 10px;
-    border-radius: 0 0 8px 8px;
-}
-
-h6 {
-    padding-bottom: 5px;
 }
 
 p {
-    background-color: #175971;
     color: white;
     text-align: center;
     font-size: 15px;
-    margin-top: 0;
-    padding-bottom: 2px;
 }
 
 label {
@@ -97,7 +91,7 @@ select {
     text-decoration: none;
     border: 1.5px solid #d2d5da;
     border-radius: 10px;
-    background-color: rgb(236, 228, 228);
+    background-color: rgb(247, 247, 247);
 }
 
 #submit {
@@ -105,6 +99,7 @@ select {
     background-color: #175971;
     color: white;
     width: 100%;
+    margin-top: 10px;
     padding: 12px;
     border-radius: 10px;
     cursor: pointer;
