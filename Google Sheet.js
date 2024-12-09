@@ -67,7 +67,7 @@ document.getElementById('universitas').addEventListener('change', function() {
     }
 });
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxM1MijbjEWlcZnkT9lD_Yehb6FuX5R0-uuIbfBab7ATMuwWMpxJsZd-KPbwzHfMIX2yQ/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzs-5MVO7ohLxUqYQ4Mo2uTCfn63eSaE-XYoX17Tyaj6OyeMtVz4V39JGgDZViM549l/exec';
 const form = document.forms['Pendaftaran'];
 const submitButton = document.getElementById('submit');
 
