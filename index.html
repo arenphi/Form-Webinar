@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>Webinar | TI.24.A6</title>
-    <link rel="Icon" href="img//icon.png">
+    <link rel="Icon" href="">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
         <img class="pamflet" src="img/pamflett.png" alt="pamflet-webinar">
-        <form method="post" action="https://script.google.com/macros/s/AKfycbzs-5MVO7ohLxUqYQ4Mo2uTCfn63eSaE-XYoX17Tyaj6OyeMtVz4V39JGgDZViM549l/exec" name="Pendaftaran">
+        <form method="post" action="https://script.google.com/macros/s/AKfycbzs-5MVO7ohLxUqYQ4Mo2uTCfn63eSaE-XYoX17Tyaj6OyeMtVz4V39JGgDZViM549l/exec" name="contact-form">
 
             <div class="header">
                 <h4>Pendaftaran Webinar</h4>
@@ -21,55 +21,55 @@
             </div>
 
             <div class="scroll">
-                <label for="Nama">Nama Peserta :</label>
-                <input type="text" name="Nama" placeholder="Nama Lengkap" required>
-                <label for="Nama">No WhatsApp Peserta :</label>
-                <input type="text" name="No.HP" placeholder="Masukan No. WhatsApp" required>
-                <label for="Nama">Email Peserta :</label>
-                <input type="email" name="Email" placeholder="Masukan Email" required>
+                <label for="nama">Nama Peserta :</label>
+                <input type="text" name="nama" placeholder="Masukan Nama Anda">
 
-                <label for="status">Pilih Status :</label>
-                <select id="status" name="Status" required>
-        <option value="M/U" selected>Mahasiswa/Umum</option>
-        <option value="Mahasiswa">Mahasiswa</option>
-        <option value="Umum">Umum</option>
-            </select>
+                <label for="nomer">No WhatsApp Peserta :</label>
+                <input type="text" name="nomer" placeholder="Masukan Nomer Anda">
+
+                <label for="email">Email Peserta</label>
+                <input type="text" name="email" placeholder="Masukan Email Anda">
+
+                <label for="status">Pilih Status</label>
+                <select id="status" name="status">
+                    <option value="M/U">Mahasiswa/Umum</option>
+                    <option value="Mahasiswa">Mahasiswa</option>
+                    <option value="Umum">Umum</option>
+                </select>
 
                 <div id="mahasiswa-input" style="display: none;">
                     <select id="universitas" name="universitas">
-                    <option value="PU" selected>Pilih Universitas</option>
-                    <option value="Universitas Pelita Bangsa" id="UPB" name="UPB">Universitas Pelita Bangsa</option>
-                    <option value="lainnya" id="lain">Lainnya</option>
-                </select>
+                        <option value="PU" selected>Pilih Universitas</option>
+                        <option value="Universitas Pelita Bangsa" id="UPB" name="UPB">Universitas Pelita Bangsa</option>
+                        <option value="lainnya" id="lain">Lainnya</option>
+                    </select>
                 </div>
 
                 <div id="UPB-input" style="display: none;">
                     <label for="Prodi">Program Studi :</label>
-                    <input type="text" id="Prodi" name="Prodi" placeholder="Masukan Program Studi Anda" required>
+                    <input type="text" id="Prodi" name="Prodi" placeholder="Masukan Prodi">
                     <label for="Kelas">Kelas :</label>
-                    <input type="text" id="Kelas" name="Kelas" placeholder="Masukan Kelas Anda " required>
+                    <input type="text" id="Kelas" name="Kelas" placeholder="Masukan Kelas Anda">
                 </div>
 
                 <div id="lainnya-input" style="display: none;">
-                    <label for="univlain" name="univlain">Universitas lainnya :</label>
-                    <input type="text" id="univlain" name="univlain" placeholder="Universitas Anda" required>
-                    <label for="Prodi">Program Studi :</label>
-                    <input type="text" id="Prodilain" name="Prodilain" placeholder="Masukan Program Studi Anda" required>
-
+                    <label for="univlain" name="univlain">Universitas Lainnya</label>
+                    <input type="text" id="univlain" name="univlain" placeholder="Universitas Lain">
+                    <label for="Prodi">Program Studi</label>
+                    <input type="text" id="prodilain" name="prodilain" placeholder="Program Studi Anda">
                 </div>
 
                 <div id="umum-input" style="display: none;">
-                    <label for="IO">Instansi/Organisasi</label>
-                    <input type="text" id="IO" name="I/O" placeholder="Masukan nama Instansi atau Organisasi" required>
+                    <label for="IO">Lainnya</label>
+                    <input type="text" id="IO" name="I/O" placeholder="Lainnya">
                 </div>
 
             </div>
-
             <input type="submit" value="Daftar Sekarang" id="submit">
         </form>
     </div>
-
-    <script src="Google Sheet.js"></script>
+    <div id="toast" class="toast">Formulir berhasil dikirim!</div>
+    <script src="script.js"></script>
 </body>
 
 </html>
