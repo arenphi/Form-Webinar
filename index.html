@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>Webinar | TI.24.A6</title>
-    <link rel="Icon" href="./img/icon.png">
+    <link rel="Icon" href="">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -21,14 +21,19 @@
             </div>
 
             <div class="scroll">
-                <label for="nama">Nama Peserta :</label>
-                <input type="text" name="nama" placeholder="Masukan Nama Anda">
 
-                <label for="nomer">No WhatsApp Peserta :</label>
-                <input type="text" name="nomer" placeholder="Masukan Nomer Anda">
+                <div class="input-container">
+                    <label for="nama">Nama Peserta :</label>
+                    <input type="text" name="nama" placeholder="Masukan Nama Lengkap Anda" required>
+                </div>
+
+                <div class="input-container">
+                    <label for="nomer">No WhatsApp Peserta :</label>
+                    <input type="number" name="nomer" placeholder="Masukan Nomer Anda" required>
+                </div>
 
                 <label for="email">Email Peserta</label>
-                <input type="text" name="email" placeholder="Masukan Email Anda">
+                <input type="email" name="email" placeholder="Masukan Email Anda" required>
 
                 <label for="status">Pilih Status</label>
                 <select id="status" name="status">
@@ -47,13 +52,13 @@
 
                 <div id="UPB-input" style="display: none;">
                     <label for="Prodi">Program Studi :</label>
-                    <input type="text" id="Prodi" name="Prodi" placeholder="Masukan Prodi">
+                    <input type="text" id="Prodi" name="Prodi" placeholder="Masukan Prodi" required>
                     <label for="Kelas">Kelas :</label>
-                    <input type="text" id="Kelas" name="Kelas" placeholder="Masukan Kelas Anda">
+                    <input type="text" id="Kelas" name="Kelas" placeholder="Masukan Kelas Anda" required>
                 </div>
 
                 <div id="lainnya-input" style="display: none;">
-                    <label for="univlain" name="univlain">Universitas Lainnya</label>
+                    <label for="univlain" name="univlain">Universitas Anda</label>
                     <input type="text" id="univlain" name="univlain" placeholder="Universitas Lain">
                     <label for="Prodi">Program Studi</label>
                     <input type="text" id="prodilain" name="prodilain" placeholder="Program Studi Anda">
