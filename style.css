@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Verdana', sans-serif;
     font-size: 18px;
 }
 
@@ -11,7 +11,6 @@ body {
     display: flex;
     position: relative;
     flex-direction: column;
-    background-color: #d2d5da;
     align-items: center;
     justify-content: center;
 }
@@ -31,10 +30,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    border: 2px solid #d2d5da;
-    box-shadow: 0 0 10px 0.5px rgb(0, 0, 0);
+    box-shadow: 0 0 10px 0px rgb(0, 0, 0);
     border-radius: 10px;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.00);
 }
 
 .info-icon {
@@ -59,7 +57,7 @@ form {
 }
 
 .scroll {
-    height: 278px;
+    height: 290px;
     padding-right: 8px;
     overflow: hidden;
     overflow-y: auto;
@@ -68,7 +66,7 @@ form {
 h4 {
     color: white;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 h5 {
@@ -97,11 +95,21 @@ select {
     width: 100%;
     padding: 10px;
     margin-bottom: 5px;
-    font-size: 15px;
+    font-size: 12px;
     text-decoration: none;
-    border: 1.5px solid #d2d5da;
+    border: 2px solid #d2d5da;
     border-radius: 10px;
-    background-color: rgb(247, 247, 247);
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 #submit {
@@ -132,6 +140,7 @@ select {
     position: fixed;
     z-index: 1;
     left: 50%;
+    bottom: 30px;
     font-size: 17px;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
